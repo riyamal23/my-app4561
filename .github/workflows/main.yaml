@@ -13,6 +13,6 @@ jobs:
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git*/*'
       env:
-        AWS_S3_BUCKET: ${{ auto-upload-my-app4561 }}
-        AWS_ACCESS_KEY_ID: ${{AKIA2Q3HIFLR3Q5IQON4}}
-        AWS_SECRET_ACCESS_KEY:   ${{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}}   
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY:   ${{ secrets.AWS_SECRET_ACCESS_KEY }}   
